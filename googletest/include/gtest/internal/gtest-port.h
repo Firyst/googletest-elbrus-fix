@@ -784,8 +784,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 // the marked function.
 #define GTEST_NO_TAIL_CALL_ __attribute__((disable_tail_calls))
 #elif __GNUC__
-#define GTEST_NO_TAIL_CALL_ \
-  __attribute__((optimize("no-optimize-sibling-calls")))
+#define GTEST_NO_TAIL_CALL_
 #else
 #define GTEST_NO_TAIL_CALL_
 #endif
